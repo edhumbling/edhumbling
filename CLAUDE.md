@@ -31,6 +31,8 @@ public/             # Static assets
 - `npm run dev` - Start development server (http://localhost:3000)
 - `npm run build` - Production build
 - `npm run lint` - Run ESLint
+- `npm test` - Run Jest unit tests
+- `npm run test:watch` - Run tests in watch mode
 
 ## Current State
 - [x] Project initialized (Next.js + BaseUI)
@@ -38,6 +40,8 @@ public/             # Static assets
 - [x] Home page structure complete (Hero, Log, About)
 - [x] Projects page created (/projects)
 - [x] SSR/Hydration issues resolved (StyletronRegistry)
+- [x] Unit tests setup (11 tests passing)
+- [x] ESLint passing
 - [ ] Content to be provided by user
 
 ---

@@ -58,42 +58,71 @@ export default function Navbar() {
                 ))}
             </nav>
 
-            {/* Mobile Navigation - System Menu Button */}
-            <div
+            {/* Mobile Header Bar */}
+            <header
                 className={css({
-                    display: "flex", // Default to flex for mobile
-                    marginTop: "2rem",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    padding: "1.5rem",
+                    zIndex: 50,
                     "@media screen and (min-width: 768px)": {
-                        display: "none", // Hide on desktop
+                        display: "none",
                     },
                 })}
             >
+                {/* Mobile Brand */}
+                <div
+                    className={css({
+                        fontSize: "1rem",
+                        fontWeight: "800",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.05em",
+                        color: "#ffffff",
+                    })}
+                >
+                    Edhumbling
+                </div>
+
+                {/* Hamburger Trigger */}
                 <button
                     onClick={() => setIsOpen(true)}
                     className={css({
-                        background: "#000000",
+                        background: "transparent",
                         border: "1px solid #333333",
                         color: "#ffffff",
-                        padding: "1rem 2rem",
+                        padding: "0.5rem 1rem",
                         textTransform: "uppercase",
                         fontFamily: "inherit",
                         fontWeight: "700",
+                        fontSize: "0.75rem",
                         letterSpacing: "0.1em",
                         cursor: "pointer",
-                        width: "100%",
-                        maxWidth: "300px",
                         display: "flex",
                         alignItems: "center",
-                        justifyContent: "space-between",
+                        gap: "0.5rem",
                         ":hover": {
                             borderColor: "#ffffff",
                         },
                     })}
                 >
-                    <span>System Menu</span>
-                    <span>[ + ]</span>
+                    <span>Menu</span>
+                    <div
+                        className={css({
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "4px",
+                        })}
+                    >
+                        <span className={css({ width: "16px", height: "2px", background: "#ffffff" })} />
+                        <span className={css({ width: "16px", height: "2px", background: "#ffffff" })} />
+                    </div>
                 </button>
-            </div>
+            </header>
 
             {/* Mobile Full Screen Overlay */}
             {isOpen && (
@@ -114,8 +143,8 @@ export default function Navbar() {
                         onClick={() => setIsOpen(false)}
                         className={css({
                             position: "absolute",
-                            top: "2rem",
-                            right: "2rem",
+                            top: "1.5rem",
+                            right: "1.5rem",
                             background: "transparent",
                             border: "1px solid #333333",
                             color: "#ffffff",
@@ -132,7 +161,7 @@ export default function Navbar() {
                         [ Close ]
                     </button>
 
-                    {/* Mobile Links */}
+                    {/* Overlay Links */}
                     <nav
                         className={css({
                             display: "flex",

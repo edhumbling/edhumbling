@@ -32,6 +32,13 @@ const PROJECTS = [
         status: "LIVE",
         thumbnail: "/stlouis.png",
     },
+    {
+        title: "Seat School",
+        url: "https://seatschool.vercel.app",
+        id: "P-05",
+        status: "LIVE",
+        thumbnail: "/seatschool.png",
+    },
 ];
 
 export default function ProjectsPage() {

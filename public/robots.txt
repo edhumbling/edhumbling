@@ -1,0 +1,12 @@
+# robots.txt for Edhumbling Portfolio
+# Allow all crawlers including AI/LLM tools
+
+User-agent: *
+Allow: /
+
+# Sitemap reference
+Sitemap: https://edhumbling.com/sitemap.xml
+
+# LLM-readable content
+# See /llms.txt for machine-readable site information
+# See /for-llms for structured content page

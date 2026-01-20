@@ -5,23 +5,30 @@ import Image from "next/image";
 
 const PROJECTS = [
     {
+        title: "Lumina Oracles",
+        url: "https://luminaoracles.com",
+        id: "P-01",
+        status: "LIVE",
+        thumbnail: "/luminaoracles.png",
+    },
+    {
         title: "Bibinii Farms",
         url: "https://bibiniifarms.com",
-        id: "P-01",
+        id: "P-02",
         status: "LIVE",
         thumbnail: "/bibinii.png",
     },
     {
         title: "Phages and Biomes",
         url: "https://phagesandbiomes.com",
-        id: "P-02",
+        id: "P-03",
         status: "LIVE",
         thumbnail: "/phages.png",
     },
     {
         title: "St. Louis Demo JHS",
         url: "https://stlouisdemojhs.com",
-        id: "P-03",
+        id: "P-04",
         status: "LIVE",
         thumbnail: "/stlouis.png",
     },

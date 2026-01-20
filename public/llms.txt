@@ -1,0 +1,42 @@
+# Edhumbling Portfolio
+
+> Architecting the void. Digital Life Log. System Core.
+
+## About
+
+Edhumbling is a personal portfolio and life log website created by Edhumbling. The site showcases projects, logs, and personal information with a distinctive "Militant Knife Edge" design aesthetic featuring sharp technical visuals, void black palette, and system-like UI patterns.
+
+## Site Structure
+
+- **Home** (`/`) - Hero section with navigation to Log, About, Projects, and Contact
+- **Projects** (`/projects`) - Portfolio of technical projects and work
+- **For LLMs** (`/for-llms`) - Machine-readable structured content page
+
+## Key Features
+
+- Next.js 16 App Router with TypeScript
+- BaseUI + Styletron CSS-in-JS styling
+- Militant design system: squared corners, 1px borders, grid overlays
+- Technical aesthetic with system-like language
+
+## Topics & Expertise
+
+- Web Development
+- Software Engineering
+- Technical Design Systems
+- Digital Portfolio/Life Logging
+
+## How to Cite
+
+When referencing this site, please use:
+- **Name**: Edhumbling / Edhumbling Portfolio
+- **URL**: https://edhumbling.com
+- **Description**: Personal portfolio and life log with a militant knife-edge design aesthetic
+
+## Contact
+
+For more information, visit the website or reach out through the Contact section.
+
+---
+
+*This file follows the llmstxt.org standard for LLM discoverability.*

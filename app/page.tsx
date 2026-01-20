@@ -1,6 +1,7 @@
 "use client";
 
 import { useStyletron } from "baseui";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const [css] = useStyletron();
@@ -134,41 +135,8 @@ export default function Home() {
           </div>
 
           {/* Navigation - Knife Edge Buttons */}
-          <nav
-            className={css({
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-              gap: "1px",
-              background: "#333333", // simplified border effect
-              maxWidth: "800px",
-            })}
-          >
-            {["Log", "About", "Projects", "Contact"].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className={css({
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  padding: "1.5rem",
-                  background: "#000000",
-                  color: "#ffffff",
-                  textTransform: "uppercase",
-                  fontWeight: "700",
-                  fontSize: "0.875rem",
-                  letterSpacing: "0.1em",
-                  transition: "background 0.2s, color 0.2s",
-                  ":hover": {
-                    background: "#ffffff",
-                    color: "#000000",
-                  },
-                })}
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
+          {/* Navigation - Responsive Component */}
+          <Navbar />
         </div>
       </section>
 

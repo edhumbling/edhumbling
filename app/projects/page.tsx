@@ -39,6 +39,13 @@ const PROJECTS = [
         status: "LIVE",
         thumbnail: "/seatschool.png",
     },
+    {
+        title: "Humbl AI",
+        url: "https://humbl-ai.vercel.app",
+        id: "P-06",
+        status: "LIVE",
+        thumbnail: "/humblai.png",
+    },
 ];
 
 export default function ProjectsPage() {
